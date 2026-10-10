@@ -1,0 +1,57 @@
+{
+  "name": "leetclawd",
+  "version": "0.1.0",
+  "description": "LeetCode in the Claude Code UI: /leetclawd shows it while Claude thinks, /leetclawdf keeps it open, /unleetclawd clears it.",
+  "author": {
+    "name": "jackson"
+  },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Default language",
+      "description": "The language a problem opens in.",
+      "default": "python3",
+      "options": [
+        "python3",
+        "python",
+        "cpp",
+        "java",
+        "c",
+        "csharp",
+        "javascript",
+        "typescript",
+        "golang",
+        "rust",
+        "kotlin",
+        "swift",
+        "ruby",
+        "scala",
+        "php",
+        "dart",
+        "elixir",
+        "erlang",
+        "racket"
+      ]
+    },
+    "delaySeconds": {
+      "type": "number",
+      "title": "Thinking delay (seconds)",
+      "description": "How long Claude must have been working before LeetCode appears.",
+      "default": 10,
+      "min": 0
+    },
+    "session": {
+      "type": "string",
+      "title": "LEETCODE_SESSION cookie",
+      "description": "Your leetcode.com session cookie, needed to run and submit. The Account screen can also import it from Safari or take it pasted.",
+      "sensitive": true
+    },
+    "shortcutKey": {
+      "type": "string",
+      "title": "Shortcut key",
+      "description": "The key that leads a LeetClawd shortcut when typed in an empty prompt box: twice to show or hide it, then a button's letter to press that button. One character that is not a letter, a digit or one of / ! @ # ? &.",
+      "default": ";"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "leetclawd",
+  "description": "LeetClawd: LeetCode in the Claude Code UI.",
+  "owner": {
+    "name": "jackson"
+  },
+  "plugins": [
+    {
+      "name": "leetclawd",
+      "source": "./"
+    }
+  ]
+}
